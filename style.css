@@ -67,8 +67,266 @@
   padding-right: 30px;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 25px;
+  width: 70%;
+}
+
+.card-outside-left {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  padding: 25px;
+}
+
+.card-outside-right {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  padding: 25px;
+}
+
+.card-left-title {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 30px;
+  /* outline: 1px solid red; */
+}
+
+.card-left-outside-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.card-right-outside-container {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.card-left-body-text {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.card-left-button-container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding: 10px;
+  width: 30%;
+}
+
+.card-left-button-lower {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-right-image-placeholder {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.underline-animation-test {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.underline-animation-test::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.underline-animation-test:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.track-external-padding {
+  padding: 15px;
+}
+
+.track-container-outside {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.track-container-inside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.track-top-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.track-top-side-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 25px;
+}
+
+.track-top-mid-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 25px;
+  font-size: 30px;
+}
+
+.track-top-mid-padding-separater {
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.track-graph-container-outside {
+  padding: 15px;
+}
+
+.track-graph-container-text {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 150px;
+  padding-left: 150px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.track-bottom-container-outside {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 25px;
+}
+
+.track-bottom-container-inside {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.track-bottom-left-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.track-bottom-left-text-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+}
+
+.track-bottom-left-text-field {
+  border-radius: 25px;
+}
+
+.track-bottom-middle-padding {
+  padding-left: 200px;
+}
+
+.track-bottom-left-button-container {
+  padding: 15px;
+}
+
+.track-bottom-left-button {
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.track-bottom-left-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.track-left-bottom-radio-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.track-bottom-left-radio-padding {
+  padding-top: 15px;
+}
+
+.track-bottom-right-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.track-bottom-right-slider-button-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
+.track-bottom-right-slider-width {
+  width: 500px;
+}
+
+.track-bottom-right-text-padding {
+  padding-right: 15px;
+}
+
+.track-bottom-right-button-side-padding {
+  padding-left: 15px;
+}
+
+.track-bottom-right-text-extra-padding {
+  padding-right: 19px;
+}
+
 /*****************************************************************************************************************************/
-/********************************************* NEUMORPHISM API (LICENSING BELOW) *********************************************/
+/********************************************* NEUMORPHISM LIBRARY (LICENSING BELOW) *********************************************/
 /*****************************************************************************************************************************/
 
 :root {

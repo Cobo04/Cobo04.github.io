@@ -1,4 +1,6 @@
 <head>
+    <title>CoboTracker</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="script.js"></script>
 
@@ -6,7 +8,7 @@
 
         <div class="nav-button">
             <a class="sul-btn light-mode" href="index.html">
-                About Me
+                About
             </a>
         </div>
 
@@ -37,11 +39,121 @@
         </div>
 
         <div class="nav-button">
-            <a class="sul-btn light-mode" href="contact.html">
-                Contact
+            <a class="sul-btn light-mode" href="ignore.html">
+                🧐
             </a>
         </div>
 
     </div>
         
 </head>
+
+<body>
+    <hr>
+    <!-- Outside Container Box -->
+    <div class="track-container-outside">
+        <div class="sul-box-raised-2 light-mode track-container-inside">
+            <!-- Inside Top 3 Titles -->
+            <div class="track-top-container">
+                <div class="track-external-padding">
+                    <div class="sul-box-raised-2 light-mode track-top-side-container">
+                        TSLA
+                    </div>
+                </div>
+
+                <div class="track-external-padding track-top-mid-padding-separater">
+                    <div class="sul-box-raised-2 light-mode track-top-mid-container">
+                        <div class="underline">
+                            <strong>CoboTracker</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-external-padding">
+                    <div class="sul-box-raised-2 light-mode track-top-side-container">
+                        $$$$
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <!-- Middle Graph Part (Fixed Size) -->
+            <div class="track-graph-container-outside">
+                <div class="sul-box-raised-2 light-mode track-graph-container-text">
+                    <div>
+                        Stonks
+                    </div>
+                    <div>
+                        <img src="newStonks.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Container for the 2 side boxes -->
+            <div class="track-bottom-container-outside">
+                <div class="sul-box-raised-2 light-mode track-bottom-container-inside">
+                    <!-- Bottom Left Container (Text Input and Radio Buttons) -->
+                    <div class="sul-box-raised-2 light-mode track-bottom-left-container">
+                        <div class="track-bottom-left-row">
+                            <div class="track-bottom-left-text-container">
+                                <input type="text" class="sul-text-field light-mode track-bottom-left-text-field" placeholder="TSLA" />
+                            </div>
+                            <div class="track-bottom-left-button-container">
+                                <a class="sul-btn light-mode track-bottom-left-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="track-left-bottom-radio-container">
+                            <div>
+                                <input type="radio" class="sul-radio light-mode" name="radio"> Real-Time
+                            </div>
+                            <div class="track-bottom-left-radio-padding">
+                                <input type="radio" class="sul-radio light-mode" name="radio"> Custom
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom Right Container (Silders for Time and Interval)-->
+                    <div class="track-bottom-middle-padding">
+                        <div class="sul-box-raised-2 light-mode track-bottom-right-container">
+                            <div class="track-bottom-right-slider-button-container">
+                                <div class="track-bottom-right-text-padding track-bottom-right-text-extra-padding">
+                                    <div class="track-bottom-right-text-extra-padding">
+                                        Time:
+                                    </div>
+                                </div>
+                                <div class="track-bottom-right-slider-width">
+                                    <input type="range" class="sul-range light-mode">
+                                </div>
+                                <div class="track-bottom-right-button-side-padding">
+                                    <div>
+                                        <a class="sul-btn light-mode">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="track-bottom-right-slider-button-container">
+                                <div class="track-bottom-right-text-padding">
+                                    Interval: 
+                                </div>
+                                <div class="track-bottom-right-slider-width">
+                                    <input type="range" class="sul-range light-mode">
+                                </div>
+                                <div class="track-bottom-right-button-side-padding">
+                                    <div>
+                                        <a class="sul-btn light-mode">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
