@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Raleway:200');
-  html, body {
-      height: 100%;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background: #1D1F20;
-  }
-  #box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 400px;
-    height: 200px;
-    color: white;
-    font-family: 'Raleway';
-    font-size: 2.5rem;
-  }
-  
-  #smaller_size {
-    font-size: 1rem;
-  }
-  .gradient-border {
-      --borderWidth: 3px;
-    background: #1D1F20;
-    position: relative;
-    border-radius: var(--borderWidth);
-  }
-  .gradient-border:after {
-      content: '';
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #ea6400, #00b6ec);
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
-  }
-  @keyframes animatedgradient {
-    	0% {
-    		background-position: 0% 50%;
-  	}
-  	50% {
-    		background-position: 100% 50%;
-  	}
-  	100% {
-    		background-position: 0% 50%;
-  	}
-  }
-</style>
 <head>
-  <title>CoboRed</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js"></script>
+
+    <div class="navbar">
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="index.html">
+                <div class="underline">
+                    About Me
+                </div>
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="projects.html">
+                Projects
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="crypto-tracker.html">
+                CoboTracker
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="converter.html">
+                CoboCurrency
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="future.html">
+                Future Plans
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="contact.html">
+                Contact
+            </a>
+        </div>
+
+        <div class="nav-button">
+            <a class="sul-btn light-mode" href="ignore.html">
+                🧐
+            </a>
+        </div>
+
+    </div>
+
 </head>
-<div class="gradient-border" id="box">Under Construction<br>8/10/2022</div>
+
+<body>
+    <hr>
+    <div class="header-name-container">
+        <div class="sul-box-raised-2 light-mode header-name-box">
+            <div class="underline">Under Construction</div>
+        </div>
+    </div>
+</body>
