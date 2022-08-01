@@ -325,6 +325,31 @@
   padding-right: 19px;
 }
 
+.timer-text {
+  font-size: 70px;
+}
+
+.quote-external-container {
+  border-radius: 25px;
+}
+
+.quoteText {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.drink-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.drink-bottom-button-padding {
+  padding: 15px;
+}
+
 /*****************************************************************************************************************************/
 /********************************************* NEUMORPHISM LIBRARY (LICENSING BELOW) *********************************************/
 /*****************************************************************************************************************************/
