@@ -50,9 +50,6 @@ function handleInput(document) {
     else if (statement === "take your meds" || statement === "meds") {
         document.getElementById("meds").classList.remove("hidden");
     }
-    else if (statement === "drink") {
-        document.getElementById("drink").classList.remove("hidden");
-    }
 
     // If the submission input was an incorrect statement, reset the text entry field;
 
