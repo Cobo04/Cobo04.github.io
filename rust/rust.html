@@ -1,0 +1,102 @@
+<head>
+    <title>Cobo's Rust Calculator</title>
+    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="rust.js"></script>
+
+    <div class="navbar">
+
+        <div class="header-name-container">
+            <div class="sul-box-raised-2 light-mode header-name-box-rust">
+                <div class="underline">Cobo's Rust Calculator</div>
+            </div>
+        </div>
+
+    </div>
+    
+</head>
+
+<body>
+    <hr>
+
+    <div class="rust-body-container">
+
+        <div class="rust-itemSelection-container">
+            <div class="sul-box-raised-2 light-mode rust-itemSelector">
+                <div class="sul-box-raised-2 light-mode rust-itemSelectorTitle">
+                    <div class="underline">
+                        Select Desired Item
+                    </div>
+                </div>
+
+                <div class="rustSearchBarContainer">
+                    <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword" id="searching" name="searching" value="Wooden Wall">
+                    <datalist id="search keyword">
+                        <option value="Wooden Wall">
+                        <option value="Stone Wall">
+                        <option value="Metal Wall">
+                        <option value="Armored Wall">
+                    </datalist>
+                </div>
+    
+                <div class="rustRadioContainer">
+                    <div class="rustRadioButton">
+                        <input type="radio" class="sul-radio light-mode" name="radio" value="hardSide" checked> Hard Side
+                    </div>
+                    <div class="rustRadioButton">
+                        <input type="radio" class="sul-radio light-mode" name="radio" value="softSide"> Soft Side
+                    </div>
+                </div>
+
+
+                <div class="rustSubmitButton">
+                    <a class="sul-btn light-mode" onclick="submitData()">
+                        <div class="underline-animation-test">
+                            <i class="fas fa-paper-plane"></i>
+                            Let's Go!
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="arrow" id="arrowItem-Action">
+            <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
+        </div>
+
+        <div class="rust-Action-Container" id="rustActionContainer">
+            <div class="sul-box-raised-2 light-mode rust-itemSelector">
+                <div class="sul-box-raised-2 light-mode rustActionTitle">
+                    <div class="underline">
+                        Action
+                    </div>
+                </div>
+
+                <div class="rustSearchBarContainer">
+                    <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword action" id="actionSearching" name="actionSearching" value="Display Statistics">
+                    <datalist id="search keyword action">
+                        <option value="Display Statistics">
+                        <option value='"I want to use . . ."'>
+                        <option value='"I have . . ."'>
+                    </datalist>
+                </div>
+
+                <div class="rustSubmitButton">
+                    <a class="sul-btn light-mode" onclick="submitActionData()">
+                        <div class="underline-animation-test">
+                            <i class="fas fa-paper-plane"></i>
+                            Let's Go!
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+
+        <!-- <div class="arrow" id="arrowItem-next">
+            <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
+        </div> -->
+        
+    </div>
+
+</body>

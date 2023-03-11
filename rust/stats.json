@@ -1,0 +1,23 @@
+{
+    "Statistics": {
+        "HP": 250,
+        "Upkeep": "20-67",
+        "Decay": "3 Hours",
+        "Cost": "250 Wood"
+    },
+    "Durability": {
+        "Incendiary Rocket": 1,
+        "Explosive 5.56 Rifle Ammo": 49,
+        "Satchel Charge": 3,
+        "Beancan Grenade": 13,
+        "High Velocity Rocket": 9,
+        "Timed Explosive Charge": 1,
+        "Rocket": 2,
+        "F1 Grenade": 59,
+        "MLRS Rocket": 1,
+        "40mm HE Grenade": 8,
+        "Fire Arrow": 125,
+        "Flame Thrower": 206,
+        "Molotov Cocktail": 4
+    }
+}
