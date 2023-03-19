@@ -82,6 +82,12 @@
   flex-direction: row;
   padding: 25px;
 }
+.card-outside-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 25px;
+}
 
 .card-outside-right {
   display: flex;
@@ -350,8 +356,263 @@
   padding: 15px;
 }
 
+.header-name-box-rust {
+  padding: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-radius: 25px;
+  font-size: 35px;
+}
+
+.rust-body-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rust-itemSelection-container {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rust-itemSelector {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.rust-itemSelectorTitle {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.triangle {
+  padding: 40px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 200px 193px 200px;
+  border-color: transparent transparent #686868 transparent;
+  transform: rotate(0deg);
+}
+
+.triangle-input-title-container {
+  text-align: center;
+}
+
+.triangle-input-title {
+  font-size: 35px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.yet-another-triangle-layer {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.triangle-input-encapsulator-inator-3000AHHH {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.triangle-input-encapsulator-inator-3000 {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle-container {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.triangle-input-fields {
+  padding: 20px;
+}
+.triangle-text-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.triangle-button-bottom-container {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle-button-bottom {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.statsChartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.statsHeaderType {
+  font-size: 40px;
+  padding: 40px;
+}
+
+.dropdown.dropdown-scroll .dropdown-list{
+  max-height: 233px;
+  overflow-y: auto;
+  list-style-type: none;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+.dropdown-list  li{
+  font-size: 14px;
+  height: 20px;
+}
+
+.dropdown-list  li > a{
+  color: black;
+}
+.dropdown-list a:hover{
+ color: black;
+}
+
+.dropdown-list li:hover{
+  background-color: lightgray;
+}
+
+.rustItemSelectionDropdownAndButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.rustSubmitButton {
+  height: 40px;
+  padding-bottom: 60px;
+}
+
+.rustSearchBar {
+  height: 45px;
+}
+
+.rustSearchBarContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rustRadioContainer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  font-size: smaller;
+  justify-content: space-between;
+}
+
+.rust-Action-Container {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  visibility: hidden;
+}
+
+.rustActionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow2 {
+  padding: 20px;
+  visibility: hidden;
+}
+
+.rustStatsContainer {
+  flex-direction: column;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.rustStatsBox {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.rustStatItem {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.rustStatisticsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.rustStatItemContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.rustTitleBox {
+  display: flex;
+  justify-content: center;
+}
+
+.rustDurabilityContainer {
+  padding: 10px;
+}
+
+.rustConstructionContainer {
+  padding: 10px;
+}
+
+/** Table CSS for the Rust app*/
+
+table {
+  width: 900px;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: #CED0DA;
+}
+
+td {
+  padding: 3px;
+}
+
+.rustHeaderImage {
+  padding-right: 8px;
+}
+
+.rustItemStatImage {
+  padding-right: 8px;
+}
+
 /*****************************************************************************************************************************/
-/********************************************* NEUMORPHISM LIBRARY (LICENSING BELOW) *********************************************/
+/************************************** NEUMORPHISM LIBRARY (LICENSING BELOW) *************************************/
 /*****************************************************************************************************************************/
 
 :root {
