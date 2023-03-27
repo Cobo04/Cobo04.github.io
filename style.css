@@ -371,8 +371,12 @@
 }
 
 .rust-itemSelection-container {
+  display: inline-block;
   flex-direction: column;
   padding: 20px;
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .rust-itemSelector {
@@ -547,6 +551,9 @@
 }
 
 .rustStatsContainer {
+  width: 970px;
+  min-width: 970px;
+  max-width: 970px;
   flex-direction: column;
   padding: 20px;
   visibility: hidden;

@@ -19,112 +19,112 @@
 <body>
     <hr>
 
-    <div class="rust-body-container">
+        <div class="rust-body-container">
 
-        <div class="rust-itemSelection-container">
-            <div class="sul-box-raised-2 light-mode rust-itemSelector">
-                <div class="sul-box-raised-2 light-mode rust-itemSelectorTitle">
-                    <div class="underline">
-                        Select Desired Item
-                    </div>
-                </div>
-
-                <div class="rustSearchBarContainer">
-                    <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword" id="searching" name="searching">
-                    <datalist id="search keyword">
-                        <option value="Wooden Wall">
-                        <option value="Stone Wall">
-                        <option value="Metal Wall">
-                        <option value="Armored Wall">
-                    </datalist>
-                </div>
-    
-                <div class="rustRadioContainer">
-                    <div class="rustRadioButton">
-                        <input type="radio" class="sul-radio light-mode" name="radio" value="hardSide" checked> Hard Side
-                    </div>
-                    <div class="rustRadioButton">
-                        <input type="radio" class="sul-radio light-mode" name="radio" value="softSide"> Soft Side
-                    </div>
-                </div>
-
-
-                <div class="rustSubmitButton">
-                    <a class="sul-btn light-mode" onclick="submitData()">
-                        <div class="underline-animation-test">
-                            <i class="fas fa-paper-plane"></i>
-                            Let's Go!
+            <div class="rust-itemSelection-container">
+                <div class="sul-box-raised-2 light-mode rust-itemSelector">
+                    <div class="sul-box-raised-2 light-mode rust-itemSelectorTitle">
+                        <div class="underline">
+                            Select Desired Item
                         </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="arrow" id="arrowItem-Action">
-            <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
-        </div>
-
-        <div class="rust-Action-Container" id="rustActionContainer">
-            <div class="sul-box-raised-2 light-mode rust-itemSelector">
-                <div class="sul-box-raised-2 light-mode rustActionTitle">
-                    <div class="underline">
-                        Action
                     </div>
-                </div>
 
-                <div class="rustSearchBarContainer">
-                    <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword action" id="actionSearching" name="actionSearching" value="Display Statistics">
-                    <datalist id="search keyword action">
-                        <option value="Display Statistics">
-                        <option value='"I want to use . . ."'>
-                        <option value='"I have . . ."'>
-                    </datalist>
-                </div>
-
-                <div class="rustSubmitButton">
-                    <a class="sul-btn light-mode" onclick="submitActionData()">
-                        <div class="underline-animation-test">
-                            <i class="fas fa-paper-plane"></i>
-                            Let's Go!
-                        </div>
-                    </a>
-                </div>
-        </div>
-
-        <div class="arrow2" id="arrowItem-Action2">
-            <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
-        </div>
-
-        <div class="rustStatsContainer" id="rustStatsContainer">
-            <div class="sul-box-raised-2 light-mode rustStatsBox">
-
-                <div class="sul-box-raised-2 light-mode rust-itemSelectorTitle">
-                    <div class="rustTitleBox">
-                        <div class="underline">General Statistics</div>
+                    <div class="rustSearchBarContainer">
+                        <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword" id="searching" name="searching">
+                        <datalist id="search keyword">
+                            <option value="Wooden Wall">
+                            <option value="Stone Wall">
+                            <option value="Metal Wall">
+                            <option value="Armored Wall">
+                        </datalist>
                     </div>
-                </div>
-
-                <!-- <div class="rustStatisticsContainer"></div>
-                <div class="rustStatItem"></div> -->
-
-                <div class="rustDurabilityContainer">
-                    <table>
-
-                        <thead>
-                            <th>Tool</th>
-                            <th>Quantity</th>
-                            <th><img class="rustHeaderImage" src="https://rustlabs.com/img/items20/lowgradefuel.png">Low Grade Required</th>
-                            <th><img class="rustHeaderImage" src="https://rustlabs.com/img/items20/sulfur.png">Sulfur Required</th>
-                          </thead>
-
-                          <tbody class="itemStats" id="itemStats"></tbody>
-
-                    </table>
-                </div>
-            </div>
-        </div>
         
-    </div>
+                    <div class="rustRadioContainer">
+                        <div class="rustRadioButton">
+                            <input type="radio" class="sul-radio light-mode" name="radio" value="hardSide" checked> Hard Side
+                        </div>
+                        <div class="rustRadioButton">
+                            <input type="radio" class="sul-radio light-mode" name="radio" value="softSide"> Soft Side
+                        </div>
+                    </div>
+
+
+                    <div class="rustSubmitButton">
+                        <a class="sul-btn light-mode" onclick="submitData()">
+                            <div class="underline-animation-test">
+                                <i class="fas fa-paper-plane"></i>
+                                Let's Go!
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="arrow" id="arrowItem-Action">
+                <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
+            </div>
+
+            <div class="rust-Action-Container" id="rustActionContainer">
+                <div class="sul-box-raised-2 light-mode rust-itemSelector">
+                    <div class="sul-box-raised-2 light-mode rustActionTitle">
+                        <div class="underline">
+                            Action
+                        </div>
+                    </div>
+
+                    <div class="rustSearchBarContainer">
+                        <input class="rustSearchBar sul-text-field light-mode" type="search" list="search keyword action" id="actionSearching" name="actionSearching" value="Display Statistics">
+                        <datalist id="search keyword action">
+                            <option value="Display Statistics">
+                            <option value='"I want to use . . ."'>
+                            <option value='"I have . . ."'>
+                        </datalist>
+                    </div>
+
+                    <div class="rustSubmitButton">
+                        <a class="sul-btn light-mode" onclick="submitActionData()">
+                            <div class="underline-animation-test">
+                                <i class="fas fa-paper-plane"></i>
+                                Let's Go!
+                            </div>
+                        </a>
+                    </div>
+            </div>
+
+            <div class="arrow2" id="arrowItem-Action2">
+                <i class="fas fa-duotone fa-arrow-right fa-2x"></i>
+            </div>
+
+            <div class="rustStatsContainer" id="rustStatsContainer">
+                <div class="sul-box-raised-2 light-mode rustStatsBox">
+
+                    <div class="sul-box-raised-2 light-mode rust-itemSelectorTitle">
+                        <div class="rustTitleBox">
+                            <div class="underline">General Statistics</div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="rustStatisticsContainer"></div>
+                    <div class="rustStatItem"></div> -->
+
+                    <div class="rustDurabilityContainer">
+                        <table>
+
+                            <thead>
+                                <th>Tool</th>
+                                <th>Quantity</th>
+                                <th><img class="rustHeaderImage" src="images/lowgradefuel.png">Low Grade Required</th>
+                                <th><img class="rustHeaderImage" src="images/sulfur.png">Sulfur Required</th>
+                            </thead>
+
+                            <tbody class="itemStats" id="itemStats"></tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
 </body>

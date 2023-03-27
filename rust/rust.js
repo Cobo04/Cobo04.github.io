@@ -136,19 +136,19 @@ function receieveItemData() {
                 ["Cost", "250 Wood"]
             ],
             [
-                ["Incendiary Rocket", 1, 253, 610, "https://rustlabs.com/img/items40/ammo.rocket.fire.png"],
-                ["Explosive 5.56 Rifle Ammo", 49, 0, "1,225", "https://rustlabs.com/img/items40/ammo.rifle.explosive.png"],
-                ["Satchel Charge", 3, 0, "1,440", "https://rustlabs.com/img/items40/explosive.satchel.png"],
-                ["Beancan Grenade", 13, 0, "1,800", "https://rustlabs.com/img/items40/grenade.beancan.png"],
-                ["High Velocity Rocket", 9, 0, "2,160", "https://rustlabs.com/img/items40/ammo.rocket.hv.png"],
-                ["Timed Explosive Charge", 1, 60, "2,200", "https://rustlabs.com/img/items40/explosive.timed.png"],
-                ["Rocket", 2, 60, "2,800", "https://rustlabs.com/img/items40/ammo.rocket.basic.png"],
-                ["F1 Grenade", 189, 0, "11,340", "https://rustlabs.com/img/items40/grenade.f1.png"],
-                ["MLRS Rocket", 1, 0, 0, "https://rustlabs.com/img/items40/ammo.rocket.mlrs.png"],
-                ["40mm HE Grenade", 8, 0, 0, "https://rustlabs.com/img/items40/ammo.grenadelauncher.he.png"],
-                ["Fire Arrow", 125, 625, 0, "https://rustlabs.com/img/items40/arrow.fire.png"],
-                ["Flame Thrower", 206, 206, 0, "https://rustlabs.com/img/items40/flamethrower.png"],
-                ["Molotov Cocktail", 4, 200, 0, "https://rustlabs.com/img/items40/grenade.molotov.png"]
+                ["Incendiary Rocket", 1, 253, 610, "images/ammo.rocket.fire.png"],
+                ["Explosive 5.56 Rifle Ammo", 49, 0, "1,225", "images/ammo.rifle.explosive.png"],
+                ["Satchel Charge", 3, 0, "1,440", "images/explosive.satchel.png"],
+                ["Beancan Grenade", 13, 0, "1,800", "images/grenade.beancan.png"],
+                ["High Velocity Rocket", 9, 0, "2,160", "images/ammo.rocket.hv.png"],
+                ["Timed Explosive Charge", 1, 60, "2,200", "images/explosive.timed.png"],
+                ["Rocket", 2, 60, "2,800", "images/ammo.rocket.basic.png"],
+                ["F1 Grenade", 189, 0, "11,340", "images/grenade.f1.png"],
+                ["MLRS Rocket", 1, 0, 0, "images/ammo.rocket.mlrs.png"],
+                ["40mm HE Grenade", 8, 0, 0, "images/ammo.grenadelauncher.he.png"],
+                ["Fire Arrow", 125, 625, 0, "images/arrow.fire.png"],
+                ["Flame Thrower", 206, 206, 0, "images/flamethrower.png"],
+                ["Molotov Cocktail", 4, 200, 0, "images/grenade.molotov.png"]
             ]
         ]
     }
@@ -161,15 +161,15 @@ function receieveItemData() {
                 ["Cost", "200 Metal"]
             ],
             [
-                ["Explosive 5.56 Rifle Ammo", 400, 0, "10,000", "https://rustlabs.com/img/items40/ammo.rifle.explosive.png"],
-                ["Satchel Charge", 21, 0, "10,080", "https://rustlabs.com/img/items40/explosive.satchel.png"],
-                ["Beancan Grenade", 131, 0, "15,720", "https://rustlabs.com/img/items40/grenade.beancan.png"],
-                ["High Velocity Rocket", 67, 0, "13,400", "https://rustlabs.com/img/items40/ammo.rocket.hv.png"],
-                ["Timed Explosive Charge", 4, 60, "8,800", "https://rustlabs.com/img/items40/explosive.timed.png"],
-                ["Rocket", 8, 60, "11,200", "https://rustlabs.com/img/items40/ammo.rocket.basic.png"],
-                ["F1 Grenade", 9,639, 0, "578,340", "https://rustlabs.com/img/items40/grenade.f1.png"],
-                ["MLRS Rocket", 6, 0, 0, "https://rustlabs.com/img/items40/ammo.rocket.mlrs.png"],
-                ["40mm HE Grenade", 57, 0, 0, "https://rustlabs.com/img/items40/ammo.grenadelauncher.he.png"]
+                ["Explosive 5.56 Rifle Ammo", 400, 0, "10,000", "images/ammo.rifle.explosive.png"],
+                ["Satchel Charge", 21, 0, "10,080", "images/explosive.satchel.png"],
+                ["Beancan Grenade", 131, 0, "15,720", "images/grenade.beancan.png"],
+                ["High Velocity Rocket", 67, 0, "13,400", "images/ammo.rocket.hv.png"],
+                ["Timed Explosive Charge", 4, 60, "8,800", "images/explosive.timed.png"],
+                ["Rocket", 8, 60, "11,200", "images/ammo.rocket.basic.png"],
+                ["F1 Grenade", 9,639, 0, "578,340", "images/grenade.f1.png"],
+                ["MLRS Rocket", 6, 0, 0, "images/ammo.rocket.mlrs.png"],
+                ["40mm HE Grenade", 57, 0, 0, "images/ammo.grenadelauncher.he.png"]
             ]
         ]
     }
@@ -182,15 +182,15 @@ function receieveItemData() {
                 ["Cost", "300 Stone"]
             ],
             [
-                ["Explosive 5.56 Rifle Ammo", 185, 0, "4,625", "https://rustlabs.com/img/items40/ammo.rifle.explosive.png"],
-                ["Satchel Charge", 10, 0, "4,800", "https://rustlabs.com/img/items40/explosive.satchel.png"],
-                ["Beancan Grenade", 64, 0, "7,680", "https://rustlabs.com/img/items40/grenade.beancan.png"],
-                ["High Velocity Rocket", 32, 0, "6,400", "https://rustlabs.com/img/items40/ammo.rocket.hv.png"],
-                ["Timed Explosive Charge", 2, 120, "4,400", "https://rustlabs.com/img/items40/explosive.timed.png"],
-                ["Rocket", 4, 120, "5,600", "https://rustlabs.com/img/items40/ammo.rocket.basic.png"],
-                ["F1 Grenade", 870, 0, "52,200", "https://rustlabs.com/img/items40/grenade.f1.png"],
-                ["MLRS Rocket", 3, 0, 0, "https://rustlabs.com/img/items40/ammo.rocket.mlrs.png"],
-                ["40mm HE Grenade", 29, 0, 0, "https://rustlabs.com/img/items40/ammo.grenadelauncher.he.png"]
+                ["Explosive 5.56 Rifle Ammo", 185, 0, "4,625", "images/ammo.rifle.explosive.png"],
+                ["Satchel Charge", 10, 0, "4,800", "images/explosive.satchel.png"],
+                ["Beancan Grenade", 64, 0, "7,680", "images/grenade.beancan.png"],
+                ["High Velocity Rocket", 32, 0, "6,400", "images/ammo.rocket.hv.png"],
+                ["Timed Explosive Charge", 2, 120, "4,400", "images/explosive.timed.png"],
+                ["Rocket", 4, 120, "5,600", "images/ammo.rocket.basic.png"],
+                ["F1 Grenade", 870, 0, "52,200", "images/grenade.f1.png"],
+                ["MLRS Rocket", 3, 0, 0, "images/ammo.rocket.mlrs.png"],
+                ["40mm HE Grenade", 29, 0, 0, "images/ammo.grenadelauncher.he.png"]
             ]
         ]
     }
@@ -203,15 +203,15 @@ function receieveItemData() {
                 ["Cost", "25 HQM"]
             ],
             [
-                ["Explosive 5.56 Rifle Ammo", 779, 0, "19,975", "https://rustlabs.com/img/items40/ammo.rifle.explosive.png"],
-                ["Satchel Charge", 41, 0, "19,680", "https://rustlabs.com/img/items40/explosive.satchel.png"],
-                ["Beancan Grenade", 262, 0, "31,440", "https://rustlabs.com/img/items40/grenade.beancan.png"],
-                ["High Velocity Rocket", 134, 0, "26,800", "https://rustlabs.com/img/items40/ammo.rocket.hv.png"],
-                ["Timed Explosive Charge", 8, 480, "17,600", "https://rustlabs.com/img/items40/explosive.timed.png"],
-                ["Rocket", 15, 450, "21,000", "https://rustlabs.com/img/items40/ammo.rocket.basic.png"],
-                ["F1 Grenade", "19,278", 0, "1,156,680", "https://rustlabs.com/img/items40/grenade.f1.png"],
-                ["MLRS Rocket", 12, 0, 0, "https://rustlabs.com/img/items40/ammo.rocket.mlrs.png"],
-                ["40mm HE Grenade", 114, 0, 0, "https://rustlabs.com/img/items40/ammo.grenadelauncher.he.png"]
+                ["Explosive 5.56 Rifle Ammo", 779, 0, "19,975", "images/ammo.rifle.explosive.png"],
+                ["Satchel Charge", 41, 0, "19,680", "images/explosive.satchel.png"],
+                ["Beancan Grenade", 262, 0, "31,440", "images/grenade.beancan.png"],
+                ["High Velocity Rocket", 134, 0, "26,800", "images/ammo.rocket.hv.png"],
+                ["Timed Explosive Charge", 8, 480, "17,600", "images/explosive.timed.png"],
+                ["Rocket", 15, 450, "21,000", "images/ammo.rocket.basic.png"],
+                ["F1 Grenade", "19,278", 0, "1,156,680", "images/grenade.f1.png"],
+                ["MLRS Rocket", 12, 0, 0, "images/ammo.rocket.mlrs.png"],
+                ["40mm HE Grenade", 114, 0, 0, "images/ammo.grenadelauncher.he.png"]
             ]
         ]
     }
