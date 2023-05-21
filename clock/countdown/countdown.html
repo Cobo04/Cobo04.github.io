@@ -1,0 +1,154 @@
+<head>
+		<title>CoboClock</title>
+		<link rel="icon" type="image/x-icon" href="../../logo.png">
+		<link href="../clock.css" rel="stylesheet" type="text/css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="countdown.js"></script>
+</head>
+
+
+<body id="background">
+
+	<div class="countdown-container" id="countdown-container">
+
+		<div class="countdown-settings-outer" id="settings">
+
+			<div class="countdown-settings-container">
+				<a class="sul-btn light-mode" onclick="settingsClick()">
+					Settings
+				</a>
+			</div>
+
+		</div>
+
+		<div class="settingsWindowAnchor" id="settingsWindowAnchor">
+			<div class="settingsWindow-container">
+
+				<!-- Title -->
+				<div class="sul-box-raised-2 light-mode settingsWindow-inner">
+					<div class="sul-box-raised-2 light-mode settingsWindow-inner title">
+						<div class="underline titleText">
+							CoboClock Settings
+						</div>
+					</div>
+
+					<!-- Set the time -->
+					<div class="timeSet">
+						<div class="timeSetInternal">
+
+							<div class="hours timeInputContainer">
+								<div class="timeInput"><input type="text" class="sul-text-field" placeholder="0" id="hours" /></div>
+								<div class="timeLabel">Hours</div>
+							</div>
+
+							<div class="minutes timeInputContainer">
+								<div class="timeInput"><input type="text" class="sul-text-field" placeholder="0" id="minutes" /></div>
+								<div class="timeLabel">Minutes</div>
+							</div>
+
+							<div class="seconds timeInputContainer">
+								<div class="timeInput"><input type="text" class="sul-text-field" placeholder="0" id="seconds" /></div>
+								<div class="timeLabel">Seconds</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Set the theme -->
+					<div class="themeSet">
+						<div class="AHHH">
+							<div class="sul-box-raised-2 light-mode themeTitle">
+								<div class="themeTitleText">Theme Settings</div>
+							</div>
+						</div>
+
+						<div class="presets">
+							<div class="presetSelector"><input type="radio" class="sul-radio" name="radio" id="CoboRed"> CoboRed</div>
+							<div class="presetSelector"><input type="radio" class="sul-radio" name="radio" id="Kimjammer"> Kimjammer</div>
+							<div class="presetSelector"><input type="radio" class="sul-radio" name="radio" id="FozFuncs"> FozFuncs</div>
+						</div>
+
+						<div class="gradient">
+							<div class="leftSliders">
+								<div class="leftR sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="leftR"></div>
+								<div class="leftG sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="leftG"></div>
+								<div class="leftB sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="leftB"></div>
+							</div>
+							<div class="rightSliders">
+								<div class="rightR sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="rightR"></div>
+								<div class="rightG sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="rightG"></div>
+								<div class="rightB sliderRestriction"><input type="range" class="sul-range" min="0" max="255" id="rightB"></div>
+							</div>
+						</div>
+
+						<!-- Save and exit -->
+						<div class="exitButtonOuterMore">
+							<div class="exitButtonContainer">
+								<div class="countdown-settings-container">
+									<a class="sul-btn light-mode" onclick="themeExit()">
+										<strong>Save and Exit</strong>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="clock-container">
+
+			<div class="clock-col">
+				<p class="clock-hours clock-timer">
+				</p>
+				<p class="clock-label">
+						Hours
+				</p>
+			</div>
+	
+			<div class="clock-col">
+				<p class="clock-minutes clock-timer">
+				</p>
+				<p class="clock-label">
+						Minutes
+				</p>
+			</div>
+	
+			<div class="clock-col">
+				<p class="clock-seconds clock-timer">
+				</p>
+				<p class="clock-label">
+						Seconds
+				</p>
+			</div>
+	
+		</div>
+
+		<div class="timeSettingsOuter">
+
+			<div class="timeSettings">
+				<a class="sul-btn light-mode" onclick="start()">
+					Start
+				</a>
+			</div>
+
+			<div class="timeSettings">
+				<a class="sul-btn light-mode" onclick="playPause()">
+					Play / Pause
+				</a>
+			</div>
+			
+			<div class="timeSettings">
+				<a class="sul-btn light-mode" onclick="resetTime()">
+					Stop
+				</a>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>

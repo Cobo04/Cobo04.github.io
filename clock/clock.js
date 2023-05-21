@@ -1,4 +1,4 @@
-console.log("Timing System Initiated");
+console.log("Clock System Initiated");
 
 document.addEventListener('DOMContentLoaded', () =>
   requestAnimationFrame(updateTime)
