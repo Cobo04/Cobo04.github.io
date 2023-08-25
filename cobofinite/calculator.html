@@ -1,0 +1,96 @@
+<head>
+    <title>CoboCalculator</title>
+    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <script src="calculator.js"></script>
+
+</head>
+
+<body>
+    <!-- <div class="topRightRadialGradient"></div> -->
+
+    <div class="calculatorContainer">
+
+        <div class="calculatorTopBar">
+            <div class="title">
+                <div class="underline">Calculator</div>
+            </div>
+        </div>
+
+        <div class="test">
+
+            <div class="mainCalculatorContainer">
+
+                <div class="functionListContainer">
+                    <div class="functionList">
+                        <div class="functionListTitle">
+                            <div class="cardTitle">
+                                <div class="underline">Function List</div>
+                            </div>
+                        </div>
+
+                        <!-- Set all function cards here -->
+
+                        <!-- TODO: TURN ALL OF THE DIVS INTO BUTTONS -->
+
+                        <div class="functionCardContainer">
+                            <button class="functionCard" id="functionCardButton">Check the union of two sets</button>
+                        </div>
+
+                        <div class="functionCardContainer">
+                            <button class="functionCard" id="functionCardButton">Check the intersection of two sets</button>
+                        </div>
+
+                        <div class="functionCardContainer">
+                            <button class="functionCard" id="functionCardButton">Determine the cross product of two sets</button>
+                        </div>
+                        
+                        <div class="functionCardContainer">
+                            <button class="functionCard" id="functionCardButton">Determine the compliment of sets</button>
+                        </div>
+
+                        <div class="functionCardContainer">
+                            <button class="functionCard" id="functionCardButton">Determine the condition (true or false) between an expression of sets</button>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="functionSearch">
+                        <div class="functionSearchTitle">Search Function List</div>
+                    </div> -->
+                </div>
+
+                <div class="IOContainer">
+
+                    <div class="outputContainer">
+                        <div class="output">
+                            <div class="cardTitle">
+                                <div class="underline">Function Request Window</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="inputContainer">
+                        <div class="input">
+                            <div class="inputTextBox">
+                                <input type="text" id="inputText" name="inputText" placeholder=">">
+                            </div>
+                            <div class="inputSubmitButton">
+                                <button id="inputSubmitButton" onclick="submitData()">
+                                    <div class="airplaneIcon">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
