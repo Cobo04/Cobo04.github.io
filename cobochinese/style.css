@@ -1,0 +1,411 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+@font-face {
+    font-family: moon;
+    src: url(moon.otf);
+}
+
+body {
+    font-family: moon;
+    background-image: linear-gradient(45deg, #0F1030, #112640);
+}
+
+.logo {
+    display: flex;
+    padding: 10px;
+    align-items: stretch;
+}
+
+.topRightRadialGradient {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    box-shadow:
+      0 0 1000px 400px #1F4778; /* outer cyan */
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.calculatorContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculatorTopBar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.mainCalculatorContainer {
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+}
+
+.functionListContainer {
+    display: flex;
+    align-items: stretch;
+
+    width: 30%;
+    padding: 10px;
+}
+
+.functionList {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.functionListTitle {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.IOContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.outputContainer {
+    display: flex;
+    justify-content: center;
+
+    height: 90%;
+    padding: 10px;
+}
+
+.output {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    padding: 20px;
+}
+
+.centerTemp {
+    display: flex;
+    justify-content: center;
+}
+
+.outputTitle {
+    color: white;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    flex-grow: 1;
+
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px; */
+    /* padding: 20px; */
+}
+
+.inputTitle {
+    color: white;
+}
+
+.functionSearch {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.functionSearchTitle {
+    color: white;
+}
+
+.underline {
+    background-image: linear-gradient(90deg, #4AFFCF, #5F20F6);
+    background-repeat: no-repeat;
+    background-size: auto .1rem;
+    background-position: bottom;
+}
+
+.cardTitle {
+    display: flex;
+    font-size: 25px;
+    color: white;
+}
+
+.inputTextBox {
+    display: flex;
+    /* width: 90%;
+    padding-right: 20px; */
+    width: 100%;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+#inputText {
+    display: flex;
+    flex-grow: 1;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    padding-left: 10px;
+
+    font-family: moon;
+    font-size: 200%;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    
+}
+
+#inputText::placeholder {
+    color: rgba(148, 145, 145, 0.6);
+}
+
+.inputSubmitButton {
+    display: flex;
+    width: 10%;
+}
+
+#inputSubmitButton {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transition-duration: 0.2s;
+}
+
+#inputSubmitButton:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+#inputSubmitButton:active {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.functionCardContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.functionCard {
+    display: flex;
+
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+    font-family: moon;
+    font-size: 100%;
+
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+#functionCardButton {
+    transition-duration: 0.2s;
+}
+
+#functionCardButton:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.flashcardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flashcardMainContainer {
+    display: flex;
+
+    padding: 10px;
+    width: 82vh;
+    height: 40vh;
+}
+
+.flashcardMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+
+    color: white;
+    font-size: 200%;
+}
+
+.flashcardButtonContainer {
+    display: flex;
+
+    padding: 30px;
+}
+
+.mainFlashcardContainer {
+    display: flex;
+    align-items: center;
+}
+
+.flashButtonReal {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.flashButtonReal:hover {
+    cursor: pointer;
+}
+
+.flashcardButton {
+    transform: scale(2.6);
+}
+
+.LRButton {
+    transition-duration: 0.2s;
+}
+
+.LRButton:hover {
+    transform: scale(1.1);
+}
+
+.counterContainer {
+    display: flex;
+}
+
+.counter {
+    display: flex;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.airplaneIcon {
+    transform: scale(2);
+}
+
+.popUpContainer {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+    width: 50%;
+    height: 50%;
+
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.popUpInternal {
+    display: flex;
+}
+
+.popUpInnerContainer {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.popUpExitContainer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.popupExitButton {
+    background: none;
+    border: none;
+}
+
+.popupExitButton:hover {
+    cursor: pointer;
+}
+
+/* custom scrollbar - i stole this from a random codepen idk who made it, sorry :( */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
