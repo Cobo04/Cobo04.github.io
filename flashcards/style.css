@@ -48,7 +48,7 @@ body {
 .mainCalculatorContainer {
     display: flex;
     flex-direction: row;
-    height: 95vh;
+    height: 97vh;
 }
 
 .functionListContainer {
@@ -170,13 +170,13 @@ body {
 
 .inputTextBox {
     display: flex;
-    /* width: 90%;
-    padding-right: 20px; */
-    width: 100%;
+    width: 90%;
+    padding-right: 20px;
+    /* width: 100%; */
 }
 
 .blur {
-    filter: blur(4px);
+    filter: blur(1000px);
 }
 
 #inputText {
@@ -361,16 +361,74 @@ body {
     border-width: 3px;
     border-color: white;
 
+    z-index: 10;
+
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 .popUpInternal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+.popUpInternalDescription {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 65%;
+}
+
+.line {
+    width: 65%;
+}
+
+.popUpButtonContainer {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.popUpButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    font-family: moon;
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+
+    transition-duration: 0.2s;
+}
+
+.popUpButton:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.popUpButton:active {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.RAHHH {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .popUpInnerContainer {
     display: flex;
     justify-content: center;
+
+    height: 100%;
 
     padding: 10px;
 }

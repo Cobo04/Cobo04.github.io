@@ -8,6 +8,11 @@
     justify-content: center;
 }
 
+.temp-button {
+  width: 20%;
+  height: 10%;
+}
+
 .header-name-box {
     padding: 70px;
     padding-right: 300px;

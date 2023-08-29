@@ -99,6 +99,8 @@ function processData(setName) {
 
     document.getElementById("flashcardTitle").innerHTML = title;
 
+    document.getElementById("setDescription").innerHTML = title + " by " + creator + ": " + description;
+
     document.getElementById("flashcardContent").innerHTML = firstCardTemp;
 
     document.getElementById("cardCounter").innerHTML = (ind + 1).toString() + " / " + setLength.toString();
@@ -116,22 +118,26 @@ function handleCardChange(change) {
         switch(change) {
 
             case "next": // Display next card
-                console.log("Cannot go any further forward");
 
-                if (ind < setLength) {
+                if (ind < (setLength - 1)) {
+                    console.log("Going to next card");
                     ind += 1
                     document.getElementById("flashcardContent").innerHTML = cards[ind][0];
                     document.getElementById("cardCounter").innerHTML = (ind + 1).toString() + " / " + setLength.toString();
+                } else {
+                    console.log("Cannot go any further forward");
                 }
                 break;
 
             case "previous": // Display previous card
-                console.log("Cannot go further back");
+                
                 if (ind > 0) {
                     console.log("Going to previous card");
                     ind -= 1;
                     document.getElementById("flashcardContent").innerHTML = cards[ind][0];
                     document.getElementById("cardCounter").innerHTML = (ind + 1).toString() + " / " + setLength.toString();
+                } else {
+                    console.log("Cannot go further back");
                 }
                 break;
 
@@ -189,6 +195,13 @@ function helpMenu() {
 
     document.getElementById("page").classList.add("blur");
     document.getElementById("popup").classList.remove("hidden");
+}
+
+function closeWindow() {
+    console.log("Closing help menu");
+
+    document.getElementById("page").classList.remove("blur");
+    document.getElementById("popup").classList.add("hidden");
 }
 
 // Key press event listeners and handlers

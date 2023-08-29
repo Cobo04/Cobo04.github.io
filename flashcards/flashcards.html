@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="../logo.png">
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <script src="chinese.js"></script>\
+    <script src="flashcards.js"></script>
 
     <meta content="CoboRed's Flashcards!" property="og:title" />
     <meta content="A lightweight and easy to use flashcard program. Oh yeah, its also completely free!" property="og:description" />
@@ -22,12 +22,30 @@
                     <div class="underline">CoboRed's Flashcard Website!</div>
                 </div>
 
+                <div class="RAHHH">
+                    <div class="popUpInternalDescription">
+                        This website acts as a vicious rival to the evil overlord, Quizlet. Currently, you, the user, are unable to create your own flashcard sets and are required to used some that are pre-generated. This is because Cobo is dumb and doesn't understand server side web design. The ability to create your own sets will come in the future.
+                    </div>
+
+                    <div class="line">
+                        <hr>
+                    </div>
+    
+                    <div class="popUpInternalDescription" id="setDescription">
+                        Select a set from a list on the left to begin studying! A description of the set will appear here once one has been selected.
+                    </div>
+
+                    <div class="popUpButtonContainer">
+                        <button class="popUpButton" onclick="closeWindow()">Return to Flashcards</button>
+                    </div>
+                </div>
+
             </div>
-            <div class="popUpExitContainer">
+            <!-- <div class="popUpExitContainer">
                 <button class="popupExitButton">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -137,13 +155,13 @@
 
                             <!-- The help menu is proving to be way harder than i would like it to be so it will be added at a later date -->
 
-                            <!-- <div class="inputSubmitButton">
+                            <div class="inputSubmitButton">
                                 <button id="inputSubmitButton" onclick="helpMenu()">
                                     <div class="airplaneIcon">
                                         <i class="fas fa-question-circle" style="color: #ffffff;"></i>
                                     </div>
                                 </button>
-                            </div> -->
+                            </div>
 
                         </div>
                     </div>
