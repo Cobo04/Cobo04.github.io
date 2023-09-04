@@ -1,0 +1,155 @@
+<head>
+    <title>Creator!</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../../logo.png">
+    <link href="create.css" rel="stylesheet" type="text/css"/>
+    <script src="create.js"></script>
+
+    <meta content="CoboRed's Flashcard Set Creator!" property="og:title" />
+    <meta content="A lightweight and easy to use flashcard set creation program. Outputs a data structure that can be implemented into the main flashcard website. Oh yeah, its also completely free!" property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta content="https://embed.com/embedimage.png" property="og:image" />
+    <meta content="#4AFFCF" data-react-helmet="true" name="theme-color" />
+</head>
+
+<body>
+    <div class="flexContainer">
+
+        <!-- Hi, this is cohen after deleting the entire html and starting over. goodbye 2 hours of work. this code is so unbelievably terrible im so sorry but my brain is not working today k tysm <3 -->
+
+
+        <!-- Top Title -->
+
+        <div class="titleContainer">
+            
+            <div class="topTitle">
+                
+                <div class="underline">Flashcard Set Generator</div>
+
+            </div>
+
+        </div>
+
+        <!-- Name and Descrption Container -->
+
+        <div class="what">
+            <div class="middleContainer">
+
+                <div class="nameContainer">
+                    <div class="padding-right">
+                        Creator Name: 
+                    </div>
+                    <input type="text" class="textInputBox" id="creatorName">
+                </div>
+    
+                <div class="titleContainerInner">
+                    <div class="padding-right">
+                        Set Name: 
+                    </div>
+                    <input type="text" class="textInputBox" id="setName">
+                </div>
+    
+                <div class="descriptionContainer">
+                    <div class="padding-right">
+                        Description: 
+                    </div>
+                    <input type="text" class="textInputBox" id="description">
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- Set Creator Main Body-->
+
+        <div class="lineBreakContainer">
+            <hr class="lineBreak">
+        </div>
+
+        <div class="setCreatorContainer">
+
+            <div class="what" id="CardContainer">
+
+                <div class="testCont" id="testONCEMOREAGAIN">
+
+                    <div class="BRAINCELLHAHAWHATSTHAT" id="card">
+
+                        <div class="setCreatorIndividualContainer">
+                    
+                            <div class="topContainer">
+                                <button class="exitButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"/></svg>
+                                </button>
+                            </div>
+        
+                            <div class="bottomContainer">
+        
+                                <div class="leftContainer">
+                                    
+                                    <div class="cardtitle">
+                                        <div class="underline">
+                                            Term
+                                        </div>
+                                    </div>
+        
+                                    <div class="testAGAIN">
+                                        <div class="cardInput">
+                                            <input type="text" class="textInputBox" id="term" name="term" placeholder="Apple">
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="leftContainer">
+                                    
+                                    <div class="cardtitle">
+                                        <div class="underline">
+                                            Definition
+                                        </div>
+                                    </div>
+        
+                                    <div class="testAGAIN">
+                                        <div class="cardInput">
+                                            <input type="text" class="textInputBox" id="definition" name="definition" placeholder="Keeps the doctor away">
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="generateContainer">
+
+                <button class="generate" onclick="newCard()">
+                    Add a new Card
+                </button>
+    
+            </div>
+
+        </div>
+
+        <!-- Generate Button -->
+
+        <div class="lineBreakContainer">
+            <hr class="lineBreak">
+        </div>
+
+        <div class="generateContainer">
+
+            <button class="generate" onclick="parseData()">
+                Generate Flashcard Set
+            </button>
+
+        </div>
+
+    </div>
+</body>
+
+<!-- I HATE WEB DESIGN I JUST NEED A GOOD FLASHCARD WEBSITE SO I CAN PASS MY CLASSES THIS SMESETR SNUDSIABU AGGGGGHHHHHHHH -->

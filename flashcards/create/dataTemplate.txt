@@ -1,0 +1,62 @@
+Flashcard dynamic dataset construction overview:
+
+1. A main list will contain all individual flashcard sets for the time being
+    ┕━━> [ [flashSet1], [flashSet2], ... , [flashSetN] ]
+    ┕━━> Once enough sets are created, this method becomes very inneficient, but that will be fixed at a later date
+
+2. Each individual set will follow the following structure
+    ┕━━> [ [setDescriptorData], [flashCards] ]
+        ┕━━> Where setDescriptorData contains the creator name, set name, and set description for a total of 3 elements
+            ┕━━> [ creatorName, setName, setDescription ]
+        ┕━━> flashCards follows the structure [ [term1, definition1], [term2, definition2], ... , [termN, definitionN] ]
+
+3. An example of a complete data structure for a container of multiple flashcard sets will follow as shown below:
+    
+    mainL = [                                   ━━> Main Set Container
+
+        [                                       ━━> Individual flashcard set
+
+            [                                   ━━> setDescriptorData (see 2.1.1)
+                creatorName,
+                setName,
+                setDescription
+            ],
+
+            [                                   ━━> Set-Specific flashcard container (see 2.2)
+                [ term1, definition1 ],         ━━> Term-Definition pair
+                [ term2, definition2 ],             
+                [ term3, definition3 ],
+            ]
+
+        ],
+
+        [                                       ━━> Another main set container; this structure repeats until N total sets have been loaded
+
+            [
+                creatorName,
+                setName,
+                setDescription
+            ],
+
+            [
+                [ term1, definition1 ],
+                [ term2, definition2 ],
+                [ term3, definition3 ],
+            ]
+
+        ]
+
+    ]
+
+4. Indexing individual pieces of data within the set database will use numerical values. Cope, J :point: :rofl:
+    ┕━━> Individual set lists:                                      mainL[i]
+
+    ┕━━> setDescriptorData:                                         mainL[i][0]
+        ┕━━> creatorName:                                           mainL[i][0][0]
+        ┕━━> setName:                                               mainL[i][0][1]
+        ┕━━> setDescription:                                        mainL[i][0][2]
+
+    ┕━━> Set-Specific flashcard container:                          mainL[i][1]
+    ┕━━> Set-Specific flashcard Term-Definition pair:               mainL[i][1][n]
+        ┕━━> Set-Specific flashcard Term:                           mainL[i][1][n][0]
+        ┕━━> Set-Specific flashcard Definition:                     mainL[i][1][n][1]

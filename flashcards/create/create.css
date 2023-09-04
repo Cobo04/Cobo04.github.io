@@ -1,0 +1,272 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+@font-face {
+    font-family: moon;
+    src: url(../moon.otf);
+}
+
+body {
+    font-family: moon;
+    color: white;
+    background-image: linear-gradient(45deg, #0F1030, #112640);
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* width: 100%; */
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    
+    padding: 10px;
+}
+
+.topTitle {
+    display: flex;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+
+    padding: 20px;
+    font-size: 175%;
+}
+
+.underline {
+    background-image: linear-gradient(90deg, #4AFFCF, #5F20F6);
+    background-repeat: no-repeat;
+    background-size: auto .1rem;
+    background-position: bottom;
+}
+
+.lineBreakContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.lineBreak {
+    width: 65%;
+}
+
+.generateContainer {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.generate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    color: white;
+    font-family: moon;
+    font-size: 130%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    transition-duration: 0.2s;
+
+    padding: 10px;
+
+    width: 20%;
+}
+
+.generate:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.generate:active {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.what {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    /* width: 100%; */
+}
+
+.middleContainer {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    width: 40%;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.titleContainerInner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.descriptionContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.textInputBox {
+    display: flex;
+    flex-grow: 1;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    font-family: moon;
+    font-size: 120%;
+    color: white;
+
+    padding: 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.setCreatorContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+.setCreatorIndividualContainer {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    padding: 10px;
+    width: 50%;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.exitButton {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    transition-duration: 0.2s;
+}
+
+.exitButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 130%;
+}
+
+.cardInput {
+    display: flex;
+    /* justify-content: center; */
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.testAGAIN {
+    display: flex;
+}
+
+.testONCEMORE {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.BRAINCELLHAHAWHATSTHAT {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    width: 100%;
+}
