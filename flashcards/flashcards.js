@@ -1,16 +1,16 @@
-// J AND F, BEFORE YOU SAY ANYTHING, i know i just slapped a json file here instead of in a json file, BUT... idk how to get it to work in an external file i hate web dev plz help ahhhhhhhh
-// ALSO IT WORKS, SO COPE + LLLLLLLLLL
+// Time to overhaul lets do this
+// JS Overhaul done! super beautiful now
+let mainL =
+[
+    [
 
-const setList = {
-    "numPinyin":
-    {
-        "setTitleData": {
-            "setTitle": "Chinese numbers 1-10 (pinyin)",
-            "setCreator": "Cobo",
-            "setDescription": "This flashcard set teaches you the numbers one through ten pronounced in the Chinese pinyin system. This set was also the first set created for this program!"
-        },
+        [
+            "Cobo",
+            "Chinese numbers 1-10 (English - pinyin)",
+            "This flashcard set teaches you the numbers one through ten pronounced in the Chinese pinyin system. This set was also the first set created for this program!"
+        ],
 
-        "setCardData": [
+        [
             ["One", "yī"],
             ["Two", "èr"],
             ["Three", "sān"],
@@ -22,17 +22,18 @@ const setList = {
             ["Nine", "jiǔ"],
             ["Ten", "shí"]
         ]
-    },
 
-    "numHanzi":
-    {
-        "setTitleData": {
-            "setTitle": "Chinese numbers 1-10 (Hanzi)",
-            "setCreator": "Cobo",
-            "setDescription": "This flashcard set teaches you the numbers one through ten displayed in the Chinese character system."
-        },
+    ],
 
-        "setCardData": [
+    [
+
+        [
+            "Cobo",
+            "Chinese numbers 1-10 (English - Hanzi)",
+            "This flashcard set teaches you the numbers one through ten displayed in the Chinese character system."
+        ],
+
+        [
             ["One", "一"],
             ["Two", "二"],
             ["Three", "三"],
@@ -44,17 +45,18 @@ const setList = {
             ["Nine", "九"],
             ["Ten", "十"]
         ]
-    },
 
-    "numHanziPinyin":
-    {
-        "setTitleData": {
-            "setTitle": "Chinese numbers 1-10 (Pinyin - Hanzi)",
-            "setCreator": "Cobo",
-            "setDescription": "This flashcard set teaches you the numbers one through ten, alternating between the Chinese pinyin and character system."
-        },
+    ],
 
-        "setCardData": [
+    [
+
+        [
+            "Cobo",
+            "Chinese numbers 1-10 (Pinyin - Hanzi)",
+            "This flashcard set teaches you the numbers one through ten, alternating between the Chinese pinyin and character system."
+        ],
+
+        [
             ["yī", "一"],
             ["èr", "二"],
             ["sān", "三"],
@@ -66,40 +68,61 @@ const setList = {
             ["jiǔ", "九"],
             ["shí", "十"]
         ]
-    }
 
-}
+    ]
+]
 
-var globalSetName = "";
+var globalSetIndex = "";
 var ind = 0;
 var side = 0;
 
-function processData(setName) {
+// Before we begin anything, thanks to the brand spankin new overhaul, we now dynamically create the set buttons by iterating through the main list
+window.addEventListener("load", (event) => {
+    // On window load, draw the sets
+    drawSetList();
+});
+
+function drawSetList() {
+    document.getElementById("allFlashcardSets").innerHTML = "";
+    console.log("Beginning set iteration");
+
+    for (let i = 0; i < mainL.length; i++) {
+        let setName = mainL[i][0][1];
+        let dynamicDiv = `<div class="functionCardContainer" name="` + setName + `" id="flashcard"><button class="functionCard" id="functionCardButton" onclick="processData(` + i.toString() + `)">` + setName + `</button></div>`
+
+        document.getElementById("allFlashcardSets").innerHTML += dynamicDiv;
+    }
+}
+
+function processData(setIndex) {
     // We are assuming the submitted name is an actual flashcard set lol, i aint checkin allat
 
+    // ind is the card index and side is 0: front or 1: back
     ind = 0;
     side = 0;
 
+    // Turn the temp text in the middle of the top right panel into the set name and remove the centering css to push to top
     document.getElementById("output").classList.remove("centerTemp");
     document.getElementById("flashcardContainer").classList.remove("hidden");
 
-    globalSetName = setName;
+    globalSetIndex = setIndex;
 
-    const title = setList[setName]["setTitleData"]["setTitle"];
-    const creator = setList[setName]["setTitleData"]["setCreator"];
-    const description = setList[setName]["setTitleData"]["setDescription"];
+    // Follows structure as defined in create/dataTemplate.txt
+    const creatorName = mainL[setIndex][0][0];
+    const setName = mainL[setIndex][0][1];
+    const setDescription = mainL[setIndex][0][2];
 
-    const firstCardTemp = setList[setName]["setCardData"][ind][side];
-
-    const cards = setList[globalSetName]["setCardData"];
+    // Set the panel to the first card front
+    const firstCardTemp = mainL[setIndex][1][ind][side];
+    const cards = mainL[globalSetIndex][1];
 
     const setLength = cards.length;
 
-    console.log("Loading", title, "created by", creator);
+    console.log("Loading", setName, "created by", creatorName);
 
-    document.getElementById("flashcardTitle").innerHTML = title;
+    document.getElementById("flashcardTitle").innerHTML = setName;
 
-    document.getElementById("setDescription").innerHTML = title + " by " + creator + ": " + description;
+    document.getElementById("setDescription").innerHTML = setName + " by " + creatorName + ": " + setDescription;
 
     document.getElementById("flashcardContent").innerHTML = firstCardTemp;
 
@@ -109,9 +132,9 @@ function processData(setName) {
 function handleCardChange(change) {
     // Determine which of the 3 states are being sent to be handles
 
-    if (globalSetName !== "") {
+    if (globalSetIndex !== "") {
 
-        const cards = setList[globalSetName]["setCardData"];
+        const cards = mainL[globalSetIndex][1];
 
         const setLength = cards.length;
 
@@ -167,7 +190,7 @@ function getTextboxData() {
     const cards = document.querySelectorAll('#flashcard'), len = cards.length;
     if (data !== "") {
         // Display only the sets that have the input inside of the name
-        console.log("Querying flashcard sets for", data.toLowerCase());
+        // console.log("Querying flashcard sets for", data.toLowerCase());
 
         for (var i=0; i<len; i++) {
             currentCard = cards[i];
@@ -224,4 +247,28 @@ document.addEventListener("keydown", (event) => {
             handleCardChange('flip');
         }
     }
+});
+
+// Import a new dataset
+window.addEventListener("load", (event) => {
+
+    document.getElementById("inputfile").addEventListener('change', function() {
+  
+        var fr = new FileReader();
+    
+        fr.onload = function() {
+            let data = JSON.parse(fr.result);
+
+            // Append imported list to the main list
+
+            mainL.push(data);
+
+            // Redraw the list of flashcard sets
+            drawSetList();
+
+        }
+        
+        fr.readAsText(this.files[0]);
+    })
+
 });

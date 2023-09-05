@@ -60,3 +60,6 @@ Flashcard dynamic dataset construction overview:
     ┕━━> Set-Specific flashcard Term-Definition pair:               mainL[i][1][n]
         ┕━━> Set-Specific flashcard Term:                           mainL[i][1][n][0]
         ┕━━> Set-Specific flashcard Definition:                     mainL[i][1][n][1]
+
+    ┕━━> Where [i] is the index of the individual flashcard set list
+        ┕━━> Ex: for (int i = 0; i < mainL.length; i++) { console.log(mainL[i]) }

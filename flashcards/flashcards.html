@@ -38,6 +38,10 @@
                     <div class="popUpButtonContainer">
                         <button class="popUpButton" onclick="closeWindow()">Return to Flashcards</button>
                     </div>
+
+                    <div class="popUpButtonContainer">
+                        <input type="file" class="popUpButton" id="inputfile">
+                    </div>
                 </div>
 
             </div>
@@ -77,19 +81,9 @@
 
                         <!-- Set all function cards here -->
 
-                        <div id="allFlashcardSets"> <!-- This div is literally just used to iterate cleanly through the list of all sets -->
+                        <div id="allFlashcardSets">
 
-                            <div class="functionCardContainer" name="Chinese numbers 1-10 (English - pinyin)" id="flashcard">
-                                <button class="functionCard" id="functionCardButton" onclick="processData('numPinyin')">Chinese numbers 1-10 (English - pinyin)</button>
-                            </div>
-    
-                            <div class="functionCardContainer" name="Chinese numbers 1-10 (English - Hanzi)" id="flashcard">
-                                <button class="functionCard" id="functionCardButton" onclick="processData('numHanzi')">Chinese numbers 1-10 (English - Hanzi)</button>
-                            </div>
-    
-                            <div class="functionCardContainer" name="Chinese numbers 1-10 (Pinyin - Hanzi)" id="flashcard">
-                                <button class="functionCard" id="functionCardButton" onclick="processData('numHanziPinyin')">Chinese numbers 1-10 (Pinyin - Hanzi)</button>
-                            </div>
+                            <!-- As a part of the overhaul, each individual set is now loaded dynamically in the js -->
 
                         </div>
 
