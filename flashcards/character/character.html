@@ -1,0 +1,57 @@
+<head>
+    <title>Chinese!</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../../logo.png">
+    <link href="character.css" rel="stylesheet" type="text/css"/>
+    <script src="character.js"></script>
+
+    <meta content="CoboRed's Chinese Character Tool!" property="og:title" />
+    <meta content="A completely free Chinese character testing utility. Tests the user's ability to draw Chinese characters given the Pinyin or English definition." property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta content="https://embed.com/embedimage.png" property="og:image" />
+    <meta content="#4AFFCF" data-react-helmet="true" name="theme-color" />
+
+    <!-- Load the Hanzi lookup library (i love you, whoever made this <3333)-->
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <div class="headerContainer">
+
+            <button class="buttonClass">
+                Help
+            </button>
+
+        </div>
+
+        <div class="characterContainer">
+
+            <div class="characterInnerContainer">
+
+                <div class="character">
+                    
+                    <div class="character-main" id="character-main">
+                        <button class="buttonClass" id="beginButton" onclick="beginSet()">Begin!</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="infoContainer">
+
+                <div class="info" id="displayInfo">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>

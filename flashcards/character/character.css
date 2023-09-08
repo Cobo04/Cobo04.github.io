@@ -1,0 +1,104 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+@font-face {
+    font-family: moon;
+    src: url('../moon.otf');
+}
+
+body {
+    font-family: moon;
+    background-image: linear-gradient(45deg, #0F1030, #112640);
+    color: white;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.buttonClass {
+    color: white;
+    font-family: moon;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 120%;
+    outline: none;
+
+    transition-duration: 0.2s;
+}
+
+.buttonClass:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.buttonClass:active {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.characterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+}
+
+.characterInnerContainer {
+    display: flex;
+    padding-bottom: 50px;
+    width: 50%;
+    height: 50%;
+}
+
+.character {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.infoContainer {
+    display: flex;
+    width: 70%;
+    height: 10%;
+}
+
+.info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 135%;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
