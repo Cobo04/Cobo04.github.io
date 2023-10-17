@@ -1,0 +1,406 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+@font-face {
+    font-family: moon;
+    src: url(moon.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: moon;
+    background-image: linear-gradient(45deg, #0F1030, #112640);
+
+    color: white;
+
+    height: 90%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3em;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profile {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 50%;
+    padding: 20px; 
+}
+
+.icon {
+    transform: scale(1.8)
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.balance {
+    font-size: 1.5em;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 90%;
+}
+
+.testContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 90%;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.gameSelectionContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+
+    padding: 20px;
+}
+
+.logoSelection {
+    font-size: 1.5em;
+}
+
+.gameIcon {
+    border: 2px red solid;
+    height: 14em;
+
+    margin-top: 15px;
+}
+
+.gameDescription {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 5px;;
+    padding: 20px; 
+}
+
+.gameTitle {
+    padding-bottom: 10px;
+}
+
+.underline {
+    background-image: linear-gradient(90deg, #4AFFCF, #5F20F6);
+    background-repeat: no-repeat;
+    background-size: auto .1rem;
+    background-position: bottom;
+}
+
+.gameListContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+.gameButton {
+    color: white;
+    font-family: moon;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+
+    width: 33%;
+
+    padding: 10px;
+    margin: 10px;
+
+    background: none;
+
+    transition-duration: 0.2s;;
+}
+
+.gameButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button {
+    color: white;
+    font-family: moon;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 10px;
+
+    background: none;
+
+    transition-duration: 0.2s;;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.button:active {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.guessOneOfThreeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 65%;
+    height: 25em;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+
+    /* box-shadow: inset 0px 0px 20px 20px rgba(146, 166, 191, 0.57); */
+    box-shadow: 0px 0px 10px 10px white;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.guessOTLeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 40%;
+    height: 100%;
+}
+
+.guessOTLeftRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.guessOTOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(146, 166, 191, 0.57);
+
+    width: 30%;
+    height: 45%;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.top-padding {
+    padding-top: 5px;
+}
+
+.guessOTMiddle {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 80%;
+    box-shadow: 0px 0px 8px 8px rgba(146, 166, 191, 0.57);
+}
+
+.guessOTRightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 10px;
+
+    width: 40%;
+    height: 100%;
+}
+
+.dim {
+    filter: brightness(50%)
+}
+
+.guessOTRightTop {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 20%;
+}
+
+.guessOTRightTopText {
+}
+
+.guessOTRightTopBalance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 8px 8px #397DD1;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    font-size: 150%;
+
+    height: 100%;
+}
+
+.guessOTRightMiddle {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+}
+
+.guessOTRightBottomButton {
+    color: white;
+    font-family: moon;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px 5px #49A13D;
+
+    padding: 10px;
+
+    background: none;
+
+    transition-duration: 0.2s;;
+}
+
+.greenShadow {
+    box-shadow: inset 0px 0px 10px 10px #49A13D;
+}
+
+.whiteShadow {
+    box-shadow: inset 0px 0px 7px 7px white;
+}
+
+.guessOTRightBottomButton:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.guessOTRightBottomButton:active {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.guessOTRightBottomContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15%;
+    margin-top: 10px;
+}
+
+.guessOTRightBottomDifficultyText {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pulsingRed {
+    animation-name: colorRed;
+    animation-duration: 1.5s;
+}
+
+@keyframes colorRed {
+    0% {
+        box-shadow: inset 0px 0px 8px 8px #397DD1;
+    }
+    50% {
+        box-shadow: inset 0px 0px 12px 12px red;
+    }
+    100% {
+        box-shadow: inset 0px 0px 8px 8px #397DD1;
+    }
+}
+
+.pulsingGreen {
+    animation-name: colorGreen;
+    animation-duration: 1s;
+}
+
+@keyframes colorGreen {
+    0% {
+        box-shadow: inset 0px 0px 8px 8px #397DD1;
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px 20px #49A13D;
+    }
+    100% {
+        box-shadow: inset 0px 0px 8px 8px #397DD1;
+    }
+}
+
+
+.transitionOut {
+    animation-duration: 0.7s;
+    animation-name: displaceContent;
+}
+
+@keyframes displaceContent {
+    /** Translate Downwards **/
+    from { transform : translateY(0em) }
+    
+    to   { transform : translateY(3.5em) } /* slide down to make room for advertisements */
+
+    /** Fade Opacity **/
+
+    0% { opacity: 1; }
+    
+    100% { opacity: 0; }
+
+}
