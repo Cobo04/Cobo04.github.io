@@ -297,7 +297,7 @@ function handleInput(buttonIndex) {
                 document.getElementById("PlaceHoldButton2").innerHTML = (Math.round(BEGINNINGAMOUNT * (beginInc + 1.6) + 4)).toString();
                 document.getElementById("PlaceHoldButton3").innerHTML = (Math.round(BEGINNINGAMOUNT * (beginInc + 1.6) + 4)).toString();
 
-                transitionOut();
+                setTimeout(function(){transitionOut()}, 1000);
 
                 console.log("Running Increment: " + runningIncrement.toString());
                 console.log("Current Bet: " + currentBet.toString());
