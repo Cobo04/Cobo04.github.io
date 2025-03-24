@@ -643,6 +643,11 @@ body {
     background-size: 150%;
 }
 
+#blog4 {
+    background-image: url("images/rsa.webp");
+    background-size: 150%;
+}
+
 .aboutMeImageTEMP {
     width: 40%;
     height: 100%;
@@ -718,4 +723,26 @@ body {
 
     padding: 10px;
     height: 26%;
+}
+
+.math_outline {
+    font-size: 1.2em;
+}
+
+.mathArticleContent {
+    width: 60%;
+}
+
+.downloadPublication {
+    background: none;
+    border: 2px solid black;
+    font-family: charterBold;
+    font-size: 1.2em;
+
+    padding: 5px;
+}
+
+.downloadPublication:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
 }
