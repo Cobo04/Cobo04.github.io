@@ -1,3 +1,30 @@
+// Get a reference to the button element
+const confettiButton = document.getElementById('confetti-button');
+
+// Add a click event listener
+confettiButton.addEventListener('click', () => {
+    // Call the confetti function with desired options
+    confetti({
+        particleCount: 100, // Number of particles
+        spread: 70, // How wide the confetti spreads
+        origin: { y: 0.6 } // The origin point of the explosion (from the button's vertical position)
+    });
+
+    const noButton = document.getElementById("no-button");
+    noButton.style.display = "none";
+
+    const title = document.getElementById("title");
+    title.textContent = "YAY! 💖💖💖";
+
+    const yesButton = document.getElementById("confetti-button");
+    yesButton.textContent = "View Your Bouquet 💌";
+    /* Make the button now redirect the user to plan.html */
+    yesButton.addEventListener('click', () => {
+        window.location.href = 'plan.html';
+    });
+
+});
+
 const noButton = document.getElementById("no-button");
 
 noButton.addEventListener("mouseenter", function() {
